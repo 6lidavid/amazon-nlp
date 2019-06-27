@@ -51,21 +51,26 @@ Once the environment is running/activated add the following extensions (this is 
 <hr/>
 
 ### __Step 5: Install Tensorflow 2__
- With the environment activated run the command":
+ With the environment activated run the command:
 
  `pip install tensorflow==2.0.0-beta1`
 
 
 <hr/>
 
-### __Step 6: Opening the Jupyter Notebook__
+### __Step 6: Install NLTK
+With the environment activated run the command:
+
+`conda install nltk`
+
+### __Step 7: Opening the Jupyter Notebook__
 To open the `Jupyter` notebook run the command in the project's directory:
 `jupyter notebook`
 
 Your browser should open up with the files and directories listed
 <hr/>
 
-### __Step 7: Creating a Python3 NoteBook Starter File__
+### __Step 8: Creating a Python3 NoteBook Starter File__
 
 In the browser create a Python 3 file. Open the file and in first block add:
 ```
@@ -73,9 +78,25 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
+import nltk
+nltk.download()
 ```
 
 Hit Shift and Enter/Return to run the cell.
+
+
+### __Step 9: Install Sklearn__
+
+In the next cell write:
+```
+%%bash
+pip install scikit-learn
+```
+
+Hit Shift and Enter/Return to run the cell.
+
+
+### __Step 10: Import the datasets__
 
 In the next two cell read in the two datasets and hit the Shift and Enter to run each cell. In the first cell write
 
@@ -95,7 +116,7 @@ To test you have some data in a new cell write and check to see the output.
 <hr/>
 
 
-### __Step 8: Deactivating the Environment__
+### __Step 11: Deactivating the Environment__
 
 
 <div>
@@ -110,7 +131,7 @@ The terminal should now read:
 
 `$`
 
-### __Step 9: Repeating Steps working with file__
-After going through the intial setup you will only be running steps 3, 6, and 8.
+### __Step 12: Repeating Steps working with file__
+After going through the intial setup you will only be running steps 3, 7, and 11.
 
 Be sure to make branches with your progress and submit PR.
